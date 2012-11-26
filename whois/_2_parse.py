@@ -23,7 +23,7 @@ def get_tld_re(tld):
 [get_tld_re(tld) for tld in dir(tld_regexpr) if tld[0] != '_']
 
 
-#from pprint import pprint
+from pprint import pprint
 
 
 def do_parse(whois_str, tld):

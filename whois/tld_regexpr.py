@@ -2,20 +2,28 @@ com = {
 'extend': None,
 
 'domain_name':				r'Domain Name:\s?(.+)',
+
 'registrar':				r'Registrar:\s?(.+)',
-'registrant':				None,
+'registrant':				r'Registrant:\s?(.+)',
 
 'creation_date':			r'Creation Date:\s?(.+)',
 'expiration_date':			r'Expiration Date:\s?(.+)',
 'updated_date':				r'Updated Date:\s?(.+)',
 
-'name_servers':				r'Name Server:\s*(.+)\s*',
+'name_servers':				r'Name Servers?:\s*(.+)\s*',
 'status':					r'Status:\s?(.+)',
 'emails':					r'[\w.-]+@[\w.-]+\.[\w]{2,4}',
 }
 
 net = {
 'extend': 'com',
+
+}
+
+edu = {
+'extend': 'com',
+'registrar':None,
+
 }
 
 org = {
