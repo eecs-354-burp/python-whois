@@ -14,6 +14,22 @@ com = {
 'status':					r'Status:\s?(.+)',
 'emails':					r'[\w.-]+@[\w.-]+\.[\w]{2,4}',
 }
+ws = {
+'extend': None,
+
+'domain_name':				r'Domain Name:\s?(.+)',
+
+'registrar':				r'Registrar Name:\s?(.+)',
+'registrant':				r'Registrant Name:\s?(.+)',
+
+'creation_date':			r'Domain Created:\s?(.+)',
+'expiration_date':			r'Domain Currently Expires:\s?(.+)',
+'updated_date':				r'Updated Last Updated:\s?(.+)',
+
+'name_servers':				r'Nameservers?:\s*(.+)\s*',
+'status':					r'Status:\s?(.+)',
+'emails':					r'[\w.-]+@[\w.-]+\.[\w]{2,4}',
+}
 
 net = {
 'extend': 'com',
