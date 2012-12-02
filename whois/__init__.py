@@ -44,7 +44,7 @@ def query(domain, force=0, cache_file=None, slow_down=0, ignore_returncode=0):
 	if domain.endswith('.co.jp'): tld = 'co_jp'
 	else: tld = d[-1]
 
-	if tld not in TLD_RE.keys(): raise Exception('Unknown TLD: %s\n(all known TLD: %s)' % (tld, list(TLD_RE.keys())))
+	#if tld not in TLD_RE.keys(): raise Exception('Unknown TLD: %s\n(all known TLD: %s)' % (tld, list(TLD_RE.keys())))
 
 	while 1:
 		pd = do_parse(do_query(d, force, cache_file, slow_down, ignore_returncode), tld)
